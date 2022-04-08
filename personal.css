@@ -1,0 +1,106 @@
+* {
+    margin: 0px;
+    top: 0px;
+    padding: 0px;
+    font-family: Helvetica, sans-serif, arial;
+    scroll-behavior: smooth;
+    --navbar-height: 6vh;
+    --card-height: 100vh;
+    background-size: auto var(--card-height);
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    resize: all;
+}
+
+body {
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    margin-left: 0px; 
+    margin-right: 0px;
+    min-width: 800px;
+    background-color: Black;
+    overflow:scroll;
+}
+
+button {
+    background-image: url(imgs/icons/hbmenu-480.png);
+    width: 10%;
+    height: 10%;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+}
+
+.home {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: var(--card-height);
+    background-color: Black;
+}
+
+.card {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: calc(var(--card-height));
+    background-color: rgba(0,0,0,0);
+}
+
+.card button {
+    border-radius:10px;
+}
+
+.cardContent {
+    top: 200px;
+    left: 0px;
+    width: 100%;
+    height: 80vh;
+    background-color: Black;
+    overflow: hidden;
+    margin-top: var(--navbar-height);
+}
+
+.navbar {
+    position: sticky;
+    top: 1%;
+    z-index: 10;
+    background-color: Black;
+    height: calc(var(--navbar-height)*.8);
+    width: 90%;
+    overflow: hidden;
+    margin: none;
+}
+
+.navbar a {
+    position: relative;
+    float: left;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    max-height: calc(var(--navbar-height)-1);
+    margin: none;
+    font-size: 1.5vw;
+    width: 10%;
+    padding: 3px;
+    height: calc(var(--navbar-height)-1);
+    transition-duration: 0.5s;
+    border: 1vh;
+    border-style: solid;
+    border-color: Black;
+}
+
+.navbar a:hover {
+    background-color:gray;
+    color: black;
+    border: 1vh;
+    border-style: solid;
+    border-color: rgb(87, 87, 87);
+}
+
+.navbar a.active {
+    background: rgb(0,150,0);
+    background: radial-gradient(circle, rgba(0,150,0,1) 0%, rgba(0,190,0,1) 100%);
+    color: white;
+}
